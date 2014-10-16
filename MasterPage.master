@@ -1,0 +1,185 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+    <script type="text/javascript">
+    
+    
+    function f1()
+    {
+    window.open("http://www.kau.edu.sa ");
+    }
+    
+    </script>
+    
+    <script type="text/javascript">
+    
+    
+    function f2()
+    {
+    window.open("http://www.webometrics.info","jkhgjh");
+    }
+    
+    </script>
+    <script type="text/javascript">
+    
+    
+    function f3()
+    {
+    window.open("http://www.aaru.edu.jo","jkhgjh");
+    }
+    
+    </script>
+     <script type="text/javascript">
+    
+    
+    function f4()
+    {
+    window.open("http://computing.kau.edu.sa/","jkhgjh");
+    }
+    
+    </script>
+    <style type="text/css">
+        .style1
+        {
+            width: 14%;
+        }
+        .style2
+        {
+            height: 34px;
+            width: 86px;
+        }
+        .style3
+        {
+            height: 42px;
+            width: 86px;
+        }
+        .style4
+        {
+            height: 21px;
+            width: 86px;
+        }
+        .style5
+        {
+            height: 15px;
+            width: 86px;
+        }
+        .style6
+        {
+            width: 86px;
+        }
+    </style>
+    
+</head>
+<body style="margin-top:0px ;  margin-bottom:0px; background-color: #Highlight;" 
+    bgcolor="#deeaee" >
+    <form id="form1" runat="server" >
+   
+    <div>
+    <center>
+        &nbsp;<table bgcolor="#ffffff" cellspacing="0" cellpadding="0" 
+            style="width: 873px; margin-left: 0px">
+            <tr >
+                <td colspan="2" 
+                    style="background-image: none; height: 154px;" bgcolor="#0F4BAD">
+                    <asp:Image ID="Image1" runat="server" Height="157px" 
+                        ImageUrl="~/picture/headf.jpg" Width="99%" />
+                </td>
+            </tr>
+            <tr>
+                <td 
+                    height="430px" bgcolor="#0F4BAD" valign="top" class="style1">
+                <table width="100%">
+                    <tr>
+                        <td class="style4">
+                            <asp:HyperLink ID="HyperLink4" runat="server" BackColor="#0F4BAD" NavigateUrl="~/Home.aspx"
+                        Width="140%" BorderStyle="Double" ForeColor="#FFFFCC" Height="21px">Home</asp:HyperLink>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td bgcolor="#0F4BAD" class="style5">
+                    <asp:HyperLink ID="HyperLink1" runat="server" BackColor="#0F4BAD" NavigateUrl="~/Rank.aspx"
+                        Width="140%" BorderStyle="Double" ForeColor="#FFFFCC" Height="24px" 
+                                Font-Bold="False"> University 
+                            Ranking</asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#0F4BAD" class="style2">
+                            <asp:HyperLink ID="HyperLink3" runat="server" BackColor="#0F4BAD" ForeColor="#FFFFCC"
+                                NavigateUrl="~/TopTen.aspx" Width="141%" BorderStyle="Double" 
+                        Height="25px" style="margin-left: 0px">Top 10 University</asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style4">
+                    <asp:HyperLink ID="HyperLink6" runat="server" BackColor="#0F4BAD" NavigateUrl="~/Comparison.aspx"
+                        Width="140%" BorderStyle="Double" ForeColor="#FFFFCC" Height="24px"> Comparison</asp:HyperLink>
+                        </td>
+                    </tr>
+                <tr>
+                <td class="style3">
+                            <asp:HyperLink ID="HyperLink7" runat="server" 
+                                NavigateUrl="~/Select Country.aspx" BorderStyle="Double" 
+                                ForeColor="#FFFFCC" Height="23px" Width="140%" BackColor="#0F4BAD">Select 
+                            Country</asp:HyperLink>
+                </td>
+                </tr>
+                <tr>
+                <td class="style6">
+                            <asp:HyperLink ID="HyperLink5" runat="server" BackColor="#0F4BAD" 
+                                BorderStyle="Double" ForeColor="#FFFFCC" Height="20px" 
+                                NavigateUrl="~/Details.aspx" Width="140%">Details</asp:HyperLink>
+                        </td>
+                </tr>
+                <tr>
+                <td class="style4">
+                    <asp:HyperLink ID="HyperLink2" runat="server" BackColor="#0F4BAD" NavigateUrl="~/AboutRanking.aspx"
+                        Width="140%" BorderStyle="Double" ForeColor="#FFFFCC" Height="23px">About the 
+                    Ranking </asp:HyperLink>
+                    </td>
+                </tr>
+                    <tr>
+                        <td bgcolor="#0F4BAD" class="style6">
+                    <asp:linkbutton ID="Linkbutton2" runat="server" onclientclick="f2();" 
+                        BackColor="#0F4BAD" ForeColor="#FFFFCC" Height="30px" Width="141%" 
+                        BorderStyle="Double"  >webmetrics</asp:linkbutton>
+                    <asp:LinkButton ID="LinkButton3" runat="server" OnClientClick="f3();" BackColor="#0F4BAD" 
+                        ForeColor="#FFFFCC" Height="36px" Width="142%" BorderStyle="Double">Union of 
+                    Arab Universities</asp:LinkButton>
+                            <asp:linkbutton ID="Linkbutton1" runat="server" onclientclick="f1();" 
+                                BackColor="#0F4BAD" Height="31px" Width="142%" ForeColor="#FFFFCC" 
+                                BorderStyle="Double"  >King Abdulaziz University</asp:linkbutton>
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+                    <br />
+                    <br />
+                    </td>
+                <td style="width: 75%"  valign="top">
+                <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" bgcolor="#0F4BAD">
+                    &nbsp;&nbsp;
+                    <asp:HyperLink ID="HyperLink8" runat="server" ForeColor="#FFFF99">Copyrights 
+                    Reserved , Khalid Thawaba</asp:HyperLink>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:HyperLink ID="HyperLink10" runat="server" ForeColor="#FFFF99" 
+                        NavigateUrl="~/About Us.aspx">About us</asp:HyperLink>
+                </td>
+            </tr>
+        </table>
+        </center>
+        
+    </div>
+    </form>
+</body>
+</html>
